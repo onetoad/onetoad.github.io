@@ -35,7 +35,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://onetoad.github.io/" />
 
-<meta property="og:updated_time" content="2019-11-24T23:01:51+08:00" />
+<meta property="og:updated_time" content="2019-11-24T23:24:25+08:00" />
 <meta itemprop="name" content="OneToad的博客">
 <meta itemprop="description" content="">
 
@@ -114,6 +114,40 @@
 
       <section class="w-100 mw8">
         
+        
+          <div class="relative w-100 mb4">
+            
+<article class="bb b--black-10">
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+      <div class="blah w-100">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="http://onetoad.github.io/posts/%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="color-inherit dim link">
+            用Hugo搭建个人博客
+            </a>
+        </h1>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          在本地搭建博客 Windows下载安装Hugo  在hugo_release页面下载安装hugo_extended_xxx_Windows-64bit.zip 解压，把hugo.exe移动到C:\Software\hugo\hugo.exe 将C:\Software\hugo\加到PATH 重启终端，运行hugo version查看版本  依据文档光速搭建博客 打开Hugo官网的QuickStart，从Step 2开始根据提示进行建站。
+创建一个新站点 quickstart为站点名字，自己取一个吧
+ hugo new site quickstart  添加一个皮肤 cd quickstart git init git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke echo 'theme = &quot;ananke&quot;' &gt;&gt; config.toml  写第一篇文章 hugo new posts/my-first-post.md  md文件在相对路径quickstart\content\posts\下，可以打开编辑
+其中draft为true则是草稿，false则是正文
+本地启动Hugo服务器 hugo server -D  在浏览器中打开http://localhost:1313/
+至此，站点已经建完
+但是我们会在后文将站点部署在 GitHub Pages上，因此还需要修改网站的配置文件并生成静态页面。
+部署到GitHub Pages上 在GitHub上创建一个Repo 这个repo命名为xxx.github.io(xxx为你的Github全小写用户名)
+修改配置文件 打开config.toml,修改baseURL
+baseURL = &quot;https://xxx.github.io/&quot;  建立静态页面 在你的站点根目录执行
+hugo -D  默认情况下，输出将位于目录.
+        </div>
+          <a href="http://onetoad.github.io/posts/%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+          </div>
         
           <div class="relative w-100 mb4">
             
